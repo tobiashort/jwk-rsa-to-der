@@ -32,8 +32,7 @@ func encodeLength(data []byte) []byte {
 	if length <= 0x7F {
 		return []byte{byte(length)}
 	}
-	lengthAsBytes := []byte{}
-	lengthAsBytes = big.NewInt(int64(length)).Bytes()
+	lengthAsBytes := big.NewInt(int64(length)).Bytes()
 	lengthLength := len(lengthAsBytes)
 	if lengthLength > 127 {
 		panic(fmt.Sprint("lengthLength too big:", lengthLength))
