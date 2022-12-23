@@ -1,4 +1,4 @@
-```shell
+```
 Usage: jwk-rsa-to-der [JWK]
 Reads from STDIN if JWK not provided as an argument.
 		
