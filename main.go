@@ -24,6 +24,10 @@ Reads from STDIN if JWK not provided as an argument.
 Flags:
 `)
 	flag.PrintDefaults()
+	fmt.Fprintf(os.Stderr, `
+To convert it into pem format:
+$ cat example.json | jwk-rsa-to-der | openssl rsa -inform der -RSAPublicKey_in
+`)
 	os.Exit(1)
 }
 
