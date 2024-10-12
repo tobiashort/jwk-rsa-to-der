@@ -1,3 +1,3 @@
-module github.com/t-hg/jwk-rsa-to-der
+module github.com/tobiashort/jwk-rsa-to-der
 
 go 1.19
